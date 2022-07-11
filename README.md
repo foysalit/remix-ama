@@ -1,30 +1,8 @@
-# Remix Blues Stack
+# Remix AMA App
 
-![The Remix Blues Stack](https://repository-images.githubusercontent.com/461012689/37d5bd8b-fa9c-4ab0-893c-f0a199d5012d)
+![The Remix Blues Stack](./public/hero-screenshot.png)
 
-Learn more about [Remix Stacks](https://remix.run/stacks).
-
-```
-npx create-remix --template remix-run/blues-stack
-```
-
-## What's in the stack
-
-- [Multi-region Fly app deployment](https://fly.io/docs/reference/scaling/) with [Docker](https://www.docker.com/)
-- [Multi-region Fly PostgreSQL Cluster](https://fly.io/docs/getting-started/multi-region-databases/)
-- Healthcheck endpoint for [Fly backups region fallbacks](https://fly.io/docs/reference/configuration/#services-http_checks)
-- [GitHub Actions](https://github.com/features/actions) for deploy on merge to production and staging environments
-- Email/Password Authentication with [cookie-based sessions](https://remix.run/docs/en/v1/api/remix#createcookiesessionstorage)
-- Database ORM with [Prisma](https://prisma.io)
-- Styling with [Tailwind](https://tailwindcss.com/)
-- End-to-end testing with [Cypress](https://cypress.io)
-- Local third party request mocking with [MSW](https://mswjs.io)
-- Unit testing with [Vitest](https://vitest.dev) and [Testing Library](https://testing-library.com)
-- Code formatting with [Prettier](https://prettier.io)
-- Linting with [ESLint](https://eslint.org)
-- Static Types with [TypeScript](https://typescriptlang.org)
-
-Not a fan of bits of the stack? Fork it, change it, and use `npx create-remix --template your/repo`! Make it your own.
+This is an AMA app where any registered user can host an AMA session that lasts for the duration of the day. Any registered user can also participate in any AMA. The app also allows commenting on any Q/A pair on a session.
 
 ## Quickstart
 
@@ -36,9 +14,9 @@ Click this button to create a [Gitpod](https://gitpod.io) workspace with the pro
 
 - This step only applies if you've opted out of having the CLI install dependencies for you:
 
-   ```sh
-   npx remix init
-   ```
+  ```sh
+  npx remix init
+  ```
 
 - Start the Postgres Database in [Docker](https://www.docker.com/get-started):
 
